@@ -1,0 +1,267 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- index 5
+<!DOCTYPE html>
+<html lang="en" ng-app='msgapp'>
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression and interpolation</title>
+</head>
+<body   ng-controller = 'Msgcontroller'>
+   
+    <div>message is <br> :{{name}}  {{saymessage()}}</div><br>
+    <div>
+        <button ng-click="feedsagar()">Feed Sagar</button>
+        <br>
+        <img ng-src="images/sagar_{{stateOfBeing}}.png" height="100px" width="100px" >
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- index 4 
+<!DOCTYPE html>
+<html lang="en" ng-app="DIApp">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dependency injection</title>
+</head>
+<body>
+    <h1>dependency injection in JS and AngulrJS</h1>
+    <div ng-controller="DIController">
+        <input type="text" ng-model="name" ng-blur="upper(); ">
+        {{name}}
+
+
+    </div>
+    
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- index 3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5 attributes custom</title>
+</head>
+<body>
+    <h1>HTML 5 CUSTOM ATTRIBUTES</h1>
+    <div id="target" ng-app="Mytestpage">
+        <section>section1 
+            <article>
+                Article 1
+            </article>
+        </section>
+    </div>
+    <script>
+        // var elem = document.getElementById('target');
+        // console.log(elem);
+        // console.log(elem.getAttribute('ng-app'))
+        var elem2 = document.querySelector("[ng-app]")
+        console.log(elem2);
+        console.log(elem2.getAttribute('ng-app'));
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- index 2
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmae calculator</title>
+</head>
+<body   ng-app="NameCalculator">                            module name  : ng-app 
+     <h1>name calculator</h1>
+    <div ng-controller="NameCalculatorController">          controller name ng-controller
+         your name:
+        <input type="text"  ng-model="name" ng-keyup="displayNumeric()">        whatever the ng-model is it will reside in viewmodel        and ng-keyup is the event listner 
+        {{name}}
+   
+        <div>
+             Total numeric value of person name: {{totalvalue}} 
+        </div>
+
+    </div>
+</body>
+</html>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- index 2
+<!DOCTYPE html>
+<html lang="en" ng-app="myfirstapp">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angular apps</title>
+</head>
+<body>
+    <div ng-controller="myfirstcontroller">
+    {{sayHello()}}
+    <input type="text"  ng-model="name">
+    Inside my input is : {{name}}
+
+    </div>
+</body>
+</html>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- index 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello coursera</title>
+</head>
+<body>
+    <h1>Low cohesion and tight coupling</h1>
+    <div id="namecalc">
+        <div>
+            your name: <input type="text" id="name">
+        </div>
+        <div id="output"></div>
+    </div>
+</body>
+</html>   -->
